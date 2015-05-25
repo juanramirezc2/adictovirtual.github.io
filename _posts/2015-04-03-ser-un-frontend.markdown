@@ -2,7 +2,7 @@
 layout: post
 title:  "Ser un Frontend"
 date:   2015-04-03 18:30:55
-categories: jekyll update
+categories: general
 ---
 Esta primera entrada la quiero dedicar a esta profesion la cual he ejercido hace un buen tiempo y me apaciona tanto 
 
