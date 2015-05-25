@@ -4,6 +4,7 @@
 .site-header {
     position:fixed;
     max-width:300px;
+    right:0;
 }
 
 .site-title {
@@ -90,6 +91,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    margin-right:300px;
 }
 
 .footer-heading {
@@ -158,7 +160,7 @@
  * Page content
  */
 .page-content {
-    margin-left:300px;
+    margin-right:300px;
 }
 
 .page-heading {
