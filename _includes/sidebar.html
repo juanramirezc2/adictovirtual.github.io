@@ -4,6 +4,7 @@
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     <div class="avatar"><img class="avatar__img" src="{{site.baseurl}}/assets/avatar.jpg"> </div>
+
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -21,7 +22,26 @@
         {% endfor %}
       </div>
     </nav>
-
+    <div class="sidebar__console extra-content">
+        <pre class="sidebar__output" id="output">$ cat info.json
+        {
+          name: 'Gabriel Ramirez',
+          email: '<a href="mailto:tuxgabo@gmail.com">tuxgabo@gmail.com</a>',
+          twitter: '<a href="http://twitter.com/adictovirtual">@adictovirtual</a>',
+          github: '<a href="http://github.com/adictovirtual">adictovirtual</a>',
+          location: '<a href="https://www.google.com/maps/d/edit?mid=z014XtrZlyug.kjPhPtegywrQ&usp=sharing">Medellin, CO</a>',
+          interests: [
+            'css',
+            'javascript',
+            'reactjs',
+            'angularjs',
+            'open source'
+          ]
+        } 
+        </pre>
+      <textarea id="prompt" class="sidebar__textarea" spellcheck="false">$ </textarea>
+      <script src="/js/console.js" async=""></script>
+      </div>
   </div>
 
 </header>
