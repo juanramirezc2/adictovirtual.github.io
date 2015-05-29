@@ -52,7 +52,7 @@ prompt.addEventListener('keydown', function(e) {
       var el = document.createElement("div");
       el.innerText = el.textContent = prompt.value + "\n" + text;
       text = el.innerHTML;
-      prompt.value = "$ ";
+      prompt.value = "gabo@host:~$ ";
       output.innerHTML += text;
       e.stopPropagation();
       e.preventDefault();
