@@ -16,7 +16,8 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
+    text-align:center;
+    width:100%;
     &,
     &:visited {
         color: $grey-color-dark;
@@ -26,6 +27,8 @@
 .site-nav {
     float: right;
     line-height: 56px;
+    width:100%;
+    text-align:center;
 
     .menu-icon {
         display: none;
