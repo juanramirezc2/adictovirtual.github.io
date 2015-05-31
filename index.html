@@ -19,11 +19,11 @@ layout: default
     </li>
   </ul>
   <p>
-    I'm available for hire, here are some facts about me.
+  I'm available for hire,<a href="/about">here are some facts about me</a>.
   </p>
-  <h2>
+  <h3>
   You may want to read some of my posts:
-  </h2>
+  </h3>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -33,8 +33,5 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </ul> 
 </div>
