@@ -7,16 +7,15 @@
     right:0;
     background:#f5f6f5;
     height:100%;
-    padding:40px 10px;
+    padding:25px 10px;
 }
 
 .site-title {
     font-size: 26px;
-    line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
     text-align:center;
+    display:block;
     width:100%;
     &,
     &:visited {
@@ -26,7 +25,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 30px;
     width:100%;
     text-align:center;
 
@@ -166,7 +165,7 @@
  */
 .page-content {
     margin-right:300px;
-    padding:40px 10px;
+    padding:25px 10px;
 }
 
 .page-heading {
