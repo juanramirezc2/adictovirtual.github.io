@@ -3,6 +3,7 @@ layout: post
 permalink: /falling-in-love-with-bem
 title:  "Falling in love with BEM"
 date:   2015-05-31 18:30:55
+path: 2015-05-31-falling-in-love-with-bem.md
 categories: Post css
 ---
 ##Love at first sight

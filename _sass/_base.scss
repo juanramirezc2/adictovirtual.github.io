@@ -249,3 +249,20 @@ pre {
   width:15%;
   float:right;
 }
+.post__meta-edit{
+  position: relative;
+  display: inline-block;
+  background: #f5f6f5;
+  color: #444;
+  padding: 2px 8px 2px 25px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 900;
+
+  i{
+    font-size: 14px;
+    position: absolute;
+    top: 4px;
+    left: 7px;
+  }
+}
