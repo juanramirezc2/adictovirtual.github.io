@@ -2,8 +2,7 @@
 title: Gabo
 email: tuxgabo@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Tecnologias Front end y buenas practicas a la hora de hacer codigo
-  Todo esto sera abordado en este blog totalmente en español.
+  Front End engineer topics and life style notes
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gaboramirez.com" # the base hostname & protocol for your site
 twitter_username: adictovirtual

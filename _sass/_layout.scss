@@ -8,6 +8,33 @@
     background:#f5f6f5;
     height:100%;
     padding:25px 10px;
+    
+    &__twitter{
+      text-align:center;
+    }
+    &__profile-nav{
+      text-align:center;
+      margin-bottom: 7px;
+      margin-top: 5px;
+      ul{
+        margin:0;
+      }
+      ul li{
+        display:inline-block;
+        font-size:12px;
+        border-right: 1px solid #ccc;
+        &:last-child{
+          border-right:0;
+        }
+        a{
+         font-weight: 900;
+         color: #444;
+         display: block;
+         padding: 2px 8px;
+        }
+      }
+    
+    }
 }
 
 .site-title {
