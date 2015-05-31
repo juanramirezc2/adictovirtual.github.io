@@ -1,6 +1,9 @@
 /**
  * Site header
  */
+
+
+
 .site-header {
     position:fixed;
     max-width:300px;
@@ -266,4 +269,21 @@
             font-size: 18px;
         }
     }
+}
+
+/* sitio en mobil */
+@media (max-width: 768px) {
+  .site-header{
+    position:initial;
+    max-width:initial;
+  }
+  .site-footer{
+    margin:0;
+  }
+  .sidebar__console{
+    display:none;
+  }
+  .page-content{
+    margin:0;
+  }
 }

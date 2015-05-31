@@ -25,6 +25,7 @@ body {
 
 
 
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -202,10 +203,11 @@ pre {
 }
 
 .avatar{
-  padding: 0 81px 0 81px;
+  text-align:center;
   &__img{
+    width:130px;
     border-radius:50%;
-  }
+}
 }
 .sidebar{
   &__console{
