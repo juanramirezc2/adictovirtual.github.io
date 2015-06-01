@@ -17,4 +17,4 @@ JQuery my first friend i thought that everything could be fixed with $ but the t
 
 CSS raw was my strong skill but after some time i found myself repeating rules and selectors, For that reason i decided to look for a methodology that guided  me through the  DRY(Don't Repeat Yourself) way,Several methodologies come to me SMACCS ,OOCSS and  BEM, SMACCS is a brilliant methodology created by Jonathan Snook , for some months this was my only way to write css but BEM came to me with its expressive classes and blocks and i felt in love literally.
 
-Someday i was on my computer and my felt that css wasn't  enought Fun for me the answer to my question was the CSS preprocessors,STYLUS LESS and last but not less important SASS
+Someday i was on my computer and my felt that css wasn't enough Fun for me the answer to my question was the CSS preprocessors,STYLUS LESS and last but not less important SASS, this last one was the prefered for me for its similar syntax to css and of course the community is huge
