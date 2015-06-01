@@ -269,3 +269,18 @@ pre {
 .skill{
   margin-bottom:20px;
 }
+.recommendation{
+  margin-top:40px;
+  &__avatar{
+    border-radius: 50%;
+    border: 5px solid #222;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  &__heading{
+    font-style: italic;
+    text-align:right;
+  }
+}
