@@ -1,8 +1,16 @@
 /**
  * Site header
  */
-
-
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.clearfix{
+  @include clearfix;
+}
 
 .site-header {
     position:fixed;
