@@ -10,6 +10,6 @@ categories: Post general
 
 I have been working in this field since  2010 from that time i didn't know that this trip would become a insteresting and exciting path.
 
-at the beggining my first approach was as a full stack 😅  developer using YII framework as my coach
+At the beggining my first approach was as a full stack 😅  developer using YII framework as my coach,JQuery as my partner and MySQL was my opponen
 
 
