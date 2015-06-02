@@ -28,7 +28,7 @@ There are two types of problems in CSS: cosmetic problems and architectural prob
 
 Architectural problems, on the other hand, can cripple development. I can remember distinct cases, at each of the companies I’ve worked for, where we postponed developing a new feature because we were too afraid to make any changes to the CSS.
 
-CSS is global, and every rule you write has the potential to affect entirely unrelated parts of the site.[1] It’s this unpredictability that makes writing good CSS so hard.
+CSS is global, and every rule you write has the potential to affect entirely unrelated parts of the site. It’s this unpredictability that makes writing good CSS so hard.
 
 If I had to choose between hiring an amazing designer who could replicate even the most complicated visual challenges easily in code and someone who understood the nuances of predictable and maintainable CSS, I’d choose the latter in a heartbeat.
 
@@ -42,7 +42,7 @@ In computer science, you say a function has side effects if, in addition to retu
 
 To put this more generally, side effects describe the phenomenon in which something that appears to only affect things in a very limited scope, actually affects a much broader range of things, and does so in a way that may not be obvious to the person performing the action.
 
-Because all CSS rules live in the global scope,[1] side effects are extremely common. And since your average stylesheet usually consist of an extremely fragile collection of highly-coupled rules, all intimately dependent on the presence, order, and specificity of other rules, even the most unassuming changes can have unforeseen consequences.
+Because all CSS rules live in the global scope, side effects are extremely common. And since your average stylesheet usually consist of an extremely fragile collection of highly-coupled rules, all intimately dependent on the presence, order, and specificity of other rules, even the most unassuming changes can have unforeseen consequences.
 
 In CSS, side effects come in three main forms:
 
@@ -52,7 +52,7 @@ Subtree matches
 
 ###Base rule changes
 
-Developers have to use HTML tags to write HTML, and there are a finite number of tags to choose from.[2] While it can be tempting to define a lot of base styles using tag selectors (technically they’re called type selectors) in order to avoid having to add classes to all your content elements, doing so necessarily creates an undeclared dependency between those rules and all of your components.
+Developers have to use HTML tags to write HTML, and there are a finite number of tags to choose from. While it can be tempting to define a lot of base styles using tag selectors (technically they’re called type selectors) in order to avoid having to add classes to all your content elements, doing so necessarily creates an undeclared dependency between those rules and all of your components.
 
 When first building a website, this doesn’t usually seem like a big deal, in fact it feels natural and DRY. You create some base, foundational styles (margins, font sizes, colors, etc.), and then your components build on top of them—so they don’t have to rewrite the shared rules.
 
@@ -119,15 +119,18 @@ I should also point out that using scoped type selectors makes this problem much
 ##How BEM eliminates side effects
 
 I said above that all CSS rules are global and every rule has the potential to conflict with every other rule on the page. This means side effects cannot be prevented by the language; however, they can be prevented via a disciplined and enforceable naming convention. And that’s exactly what BEM provides.
-
--Base rule changes:
-Strict BEM conventions require the sole use of class selectors. You start with a global reset, and then you use blocks to style everything on the page. In other words, adding a class to an element is the only way to style it, which means all styling is opt-in rather than de facto. Blocks encapsulate all of their styling and rely on no external dependencies.[3]
-
--Naming collisions:
+<ul>
+<li>Base rule changes:
+Strict BEM conventions require the sole use of class selectors. You start with a global reset, and then you use blocks to style everything on the page. In other words, adding a class to an element is the only way to style it, which means all styling is opt-in rather than de facto. Blocks encapsulate all of their styling and rely on no external dependencies.</li>
+<li>
+Naming collisions:
 In BEM, every class selector is either the block name itself or uses the block name as a prefix, and the rules for each block live in their own dedicated file. Since file systems do not allow two files to have the same name, the OS is actually helping to prevent accidental duplication. If you follow all of the BEM naming conventions, and you ensure all block code resides in its own file, you will never have naming collisions.
-
--Subtree matches:
-The subtree matching example in the previous section used the selectors .article .title and .widget .title. Since the class name “title” was used in both cases, there’s a risk of subtree matching. BEM avoids this risk by requiring that all element classes be prefixed with the block name. The BEM equivalents of these two title selectors would be .Article-title and .Widget-title (or .article__title and .widget__title, depending on your preference).[4] Since the class names are different, their styles won’t ever conflict, and thus it’s impossible to have unintended subtree matches.
+</li>
+<li>
+Subtree matches:
+The subtree matching example in the previous section used the selectors .article .title and .widget .title. Since the class name “title” was used in both cases, there’s a risk of subtree matching. BEM avoids this risk by requiring that all element classes be prefixed with the block name. The BEM equivalents of these two title selectors would be .Article-title and .Widget-title (or .article__title and .widget__title, depending on your preference). Since the class names are different, their styles won’t ever conflict, and thus it’s impossible to have unintended subtree matches.
+</li>
+</ul>
 
 ###Enforcing conventions
 
