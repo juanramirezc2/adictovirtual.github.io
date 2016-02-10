@@ -12,3 +12,4 @@ Es muy posible que algunos de ustedes no hallan escuchado el termino, esto es de
 a este estilo de vida como *digital nomads*, parte de la motivacion de este blog es incluso crear contenido en idioma español acerca de este tema,
 asi tambien como motivar 💪🏻 a algunas personas que depronto sienten que quieren probar otro enfoque a su rutina 🖥.
 
+![My helpful screenshot]({{ site.url }}/assets/images/content/oficina.jpg)
