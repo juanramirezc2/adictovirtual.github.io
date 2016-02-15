@@ -1,34 +1,33 @@
 ---
 layout: default
 ---
-
 <div class="home">
-  <h1>Bienvenido! si te gusta el desarrollo de software y la vida nomadica🚌😬 esto te gustara</h1>
+  <h1>un poco de mi  </h1>
   <p>Mi nombre es  Juan Gabriel,</p>
   <p>
-    Construyo la Web desde hace varios años(lo cual disfruto mucho 🙉), tambien me gusta  viajar conocer nuevas culturas lugares y paisajes,
+    Construyo la Web desde hace varios años (lo cual disfruto mucho 🤔 ), tambien me gusta  viajar conocer nuevas culturas lugares y paisajes,
     la mayor parte de mi tiempo trabaje remotamente para compañias extrangeras desde mi casa, 
     despues decidi cambiar este enfoque  para trabajar desde una oficina  y saber si esa era la manera en que lo seguiria haciendo,
     fue una experiencia muy grata no voy a decir lo contrario pero senti que debia seguir buscando,
-    asi que  este año(2016) decidi emprender un cambio e iniciar un viaje por toda suramerica mientras trabajo en una pequeña(por el momento 😊) start up.
+    asi que  este año(2016) decidi emprender un cambio e iniciar un viaje por toda 🚌  suramerica mientras trabajo en una pequeña(por el momento 😊) start up.
   </p>
   <p>
     Este Blog se Crea como una forma de documentar esta experiencia, compartir tips para las personas que decidan intentar esta forma de trabajo que hoy en 
     dia es llamada ¨nomadas digitales¨ 🤔 que creo que mas que eso se esta convirtiendo en una moda 😏 ,ademas tambien compartire tips de programacion por supuesto.
-    
+
     Asi que bienvenido 
-    </p?
+  </p>
   <h3>
-  Quieres leer algunos de mis post 
+    Quieres leer algunos de mis post 
   </h3>
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
     {% endfor %}
   </ul> 
 </div>
