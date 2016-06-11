@@ -4,7 +4,6 @@ nickname : Gabo
 email: tuxgabo@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Informacion sobre desarrollo Web front End, ademas de recomendaciones y apuntes para Nomadas digitales
-pygments: true
 permalink: /:year/:month/:title
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gaboramirez.com" # the base hostname & protocol for your site
