@@ -1,9 +1,9 @@
 # Site settings
-title: juan gabriel ramirez cruz - Front End Consultant & Nomada Digital
+title: juan gabriel ramirez cruz - Nomada Digital
 nickname : Gabo
 email: tuxgabo@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Apuntes acerca de desarrollo Web front End, ademas de recomendaciones y apuntes para Nomadas digitales
+  Bitacora de un Nomada
 permalink: /:year/:month/:title
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gaboramirez.com" # the base hostname & protocol for your site

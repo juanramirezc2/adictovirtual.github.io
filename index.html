@@ -2,32 +2,40 @@
 layout: default
 ---
 <div class="home">
-  <h1>un poco de mi  </h1>
-  <p>Mi nombre es  Juan Gabriel,</p>
-  <p>
-    Construyo la Web desde hace varios años (lo cual disfruto mucho 🤔 ), tambien me gusta  viajar conocer nuevas culturas lugares y paisajes,
-    la mayor parte de mi tiempo trabaje remotamente para compañias extrangeras desde mi casa, 
-    despues decidi cambiar este enfoque  para trabajar desde una oficina  y saber si esa era la manera en que lo seguiria haciendo,
-    fue una experiencia muy grata no voy a decir lo contrario pero senti que debia seguir buscando,
-    asi que  este año(2016) decidi emprender un cambio e iniciar un viaje por toda 🚌  suramerica mientras trabajo en una pequeña(por el momento 😊) start up.
-  </p>
-  <p>
-    Este Blog se Crea como una forma de documentar esta experiencia, compartir tips para las personas que decidan intentar esta forma de trabajo que hoy en 
-    dia es llamada ¨nomadas digitales¨ 🤔 que creo que mas que eso se esta convirtiendo en una moda 😏 ,ademas tambien compartire tips de programacion por supuesto.
 
-    Asi que bienvenido 
-  </p>
-  <h3>
-    Quieres leer algunos de mis post 
-  </h3>
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-    {% endfor %}
-  </ul> 
+	<h2>👋🏼  hola visitante bienvenido y tome asiento🏡 </h2>
+	<h1>Mi nombre es  Juan Gabriel</h1>
+	<p>
+		Soy ingeniero de sistemas y programador de computadoras 🤓  (se que pensaran "aburrido!!" 🙄 ), la mayor parte de mi tiempo trabaje remotamente desde mi casa 🏡  y
+		en algunas empresas en oficina (ahora soy yo el que digo "buuu que aburrido!!" 😵 ), despues de casi 4 años trabajando de esa manera reflexione sobre lo que me 
+		esperaba en un futuro encerrado en una habitacion de 4x4 y saliendo solo a comer 🤕 , si lo se suena como una carcel pero creeme muchas veces se sentia asi.
+	</p>
+	<p>
+		La vida solo es una y hay que saber vivirla, quisiera que si al final de ella me preguntaran --bueno y que tal fue? -- poder decir orgulloso "me voy feliz, por que la viví a plenitud".
+	</p>
+	<p>
+		(bueno ya demasiado sentimentalismo 😒 😴 )
+		Asi que decidi Renunciar a mi empleo 👔 💼, Salí corriendo 🚶🏻🏃🏻  a empacar mis cosas 🎒💻📱⌚️ 🚽   y me fui de viaje 🌎  🚌✈️ mientras  trabajo remotamente para una startup.
+
+	</p>
+	<p>
+		Decidí crear este Blog 🤔  como una bitacora de mi viaje 📖  (asi poder recordar momentos cuando sea 👴🏼), ademas para compartir desde mi perspectiva 👀 ,imagenes, pensamientos y experiencias.
+	</p>
+	<p>
+		<b>	Asi que bienvenido </b><br>
+		<sub>(advertencia me gusta usar muchas caritas 🙃 🙂 )</sub>
+	</p>
+	<h3>
+		aqui 👇🏽  puedes encontrar algunas de mis recientes entradas espero sean de su agrado
+	</h3>
+	<ul class="post-list">
+		{% for post in site.posts %}
+		<li>
+			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			<h2>
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h2>
+		</li>
+		{% endfor %}
+	</ul> 
 </div>
